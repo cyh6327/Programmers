@@ -19,4 +19,8 @@ public class Programmers1845 {
 
         System.out.println(answer);
     }
+
+    public static void solution2(int[] nums) {
+
+    }
 }
