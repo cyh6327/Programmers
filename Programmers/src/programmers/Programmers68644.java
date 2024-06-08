@@ -10,7 +10,12 @@ public class Programmers68644 {
         System.out.println(Arrays.toString(solution(numbers2)));
     }
 
-    // O(n²)
+    /*
+        O(N²logN)
+        Set의 최대 크기를 k라고 가정, stream 의 sort() 메서드의 시간 복잡도는 O(klogk)
+        아래 메서드에서 k = N²(N = numbers.length)
+        즉 최종 시간복잡도는 O(N²logN)
+     */
     public static int[] solution(int[] numbers) {
         Set<Integer> set = new HashSet<>();
 
