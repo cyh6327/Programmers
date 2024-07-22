@@ -31,4 +31,19 @@ public class Programmers12949 {
         return answer;
     }
 
+    // 간소화 버전
+    public static int[][] otherSolution(int[][] arr1, int[][] arr2) {
+        int[][] answer = new int[arr1.length][arr2[0].length];
+
+        for (int x = 0; x < arr1.length; x++) {
+            for (int y = 0; y < arr1[0].length; y++) {
+                for (int z = 0; z < arr2[0].length; z++) {
+                    answer[x][z] = answer[x][z] + arr1[x][y]*arr2[y][z];
+                }
+            }
+        }
+
+        return answer;
+    }
+
 }
